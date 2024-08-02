@@ -1,0 +1,7 @@
+Bundle-Name: langchain4j-web
+Bundle-SymbolicName: com.liferay.community.langchain4j.sample
+Bundle-Version: 1.0.0
+Export-Package: com.liferay.community.langchain4j.sample.constants
+Provide-Capability:\
+	liferay.language.resources;\
+		resource.bundle.base.name="content.Language"
