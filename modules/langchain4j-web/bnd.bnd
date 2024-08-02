@@ -5,3 +5,20 @@ Export-Package: com.liferay.community.langchain4j.sample.constants
 Provide-Capability:\
 	liferay.language.resources;\
 		resource.bundle.base.name="content.Language"
+
+-fixupmessages "Classes found in the wrong directory"; restrict:=error; is:=warning
+
+Import-Package: \
+  !android.net.http,\
+  !android.net.ssl,\
+  !android.os,\
+  !android.security,\
+  !android.util,\
+  !kotlinx.coroutines,\
+  !org.bouncycastle.jsse,\
+  !org.bouncycastle.jsse.provider,\
+  !org.conscrypt,\
+  !org.openjsse.javax.net.ssl,\
+  !org.openjsse.net.ssl,\
+  !javax.annotation.meta,\
+  *

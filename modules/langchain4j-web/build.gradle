@@ -1,5 +1,12 @@
 dependencies {
-	compileOnly group: "com.liferay.portal", name: "release.portal.api"
+	compileOnly group: "com.liferay.portal", name: "release.portal.api", version: "7.4.3.120"
 
 	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.1.4"
+
+	compileInclude group: 'dev.langchain4j', name: 'langchain4j', version: '0.33.0'
+	compileInclude group: 'dev.langchain4j', name: 'langchain4j-open-ai', version: '0.33.0'
+
+	// transitive dependencies of langchain4j
+    compileInclude 'org.jetbrains.kotlin:kotlin-stdlib:1.8.0'
+
 }
